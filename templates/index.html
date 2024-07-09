@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GAN Image Generator</title>
+</head>
+<body>
+    <h1>GAN Image Generator</h1>
+    <img id="generated-image" src="/generate" alt="Generated Image">
+    <br>
+    <button onclick="generateImage()">Generate New Image</button>
+    <script>
+        function generateImage() {
+            document.getElementById('generated-image').src = '/generate?' + new Date().getTime();
+        }
+    </script>
+</body>
+</html>
